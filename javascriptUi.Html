@@ -4,6 +4,12 @@
     <link rel="stylesheet" href="Design.css">
     <link rel="javascript" href="Javascript.js">
     <link rel = "icon" href = "Images/javascript.png" type = "image/y-icon">
+    <script>
+        function addContent(){
+            document.getElementById('content').innerHTML="Content Added";
+        }
+    </script>
+    <script src="Javascript.js"></script>
 </head>
 <body>
     <h1 id="title">Java Script</h1>
@@ -13,5 +19,10 @@
 <hr/>
 <p id="demo1">JavaScript can change the style of an HTML element.</p>
 
-<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='30px'">Font Size Incr</button>&nbsp;&nbsp;
+<button type="button"onclick="document.getElementById('demo1').style.fontSize='16px'">Font Size Decr</button>&nbsp;&nbsp;<span id="content" ondblclick="hideContent()" onclick="changecolor()"></span>&nbsp;&nbsp;
+<button type="button" onclick="addContent()">Add Content</button>
+
+<button type="button" onclick="document.write('')">Clean the page</button>
+<button type="button" onclick="window.print('')">Print This Page</button>
 </body>
