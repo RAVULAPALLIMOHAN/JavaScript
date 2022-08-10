@@ -4,3 +4,6 @@ function hideContent(){
 function changecolor(){
     document.getElementById('content').style.color='red';
 }
+
+
+
