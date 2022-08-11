@@ -2,20 +2,61 @@
 <head>
     <title>
       var let and const
-    </title>
+    </title><link rel="stylesheet" href="Design.css">
 <script src="VarLetConst.js" ></script>
+<style>
+  b{
+    color: red;
+  }
+  i{color: blue;}rb{color:blueviolet}
+</style>
 </head>
 <body>
 <h3>var</h3>
 <p>var keyword we can use function level and override the values</p>
 <pre>
-    for Ex: var x=10;
-            var x=50;
-        document.write(x); =>output is 50 (x=10 override to 50)
+  <i>var</i> x = 10;
+  <i>var</i> x = 20;
+  <rb>x value is 20; and allow add variable multiple time </rb>
+  <i>let</i> x = 25;
+  <i>let</i> x = 50;
+
+  <b>// You can create a const object:</b>
+   <i>const</i> car = {type:"Fiat", model:"500", color:"white"};
+
+  <b>// You can change a property:</b>
+   <i>car.color = "red";</i>
+
+ <b>// You can add a property:</b>
+  <i>car.owner = "Johnson";</i>
+
+  <b>// You can't re-assign the property:</b>
+  <i>const</i> car = {type:"Fiat", model:"500", color:"white"};
+        car = {owner:"john", country:"USA"};
+-----------------------------------------------------------------------
+  <span id="lineheight"> 
+  <b>//Function level</b>
+    function var1(){ 
+      var i; <i>//This is function level</i>
+    for ( i=0; i<= 10; i++) {
+       document.getElementById("var1").innerHTML=(i +"");
+       } 
+    }
+  <b> //Block level</b>
+    function var2(){ 
+    for ( var i=0; i<= 10; i++){ <i>//This is block level</i>
+       document.getElementById("var1").innerHTML=(i +"");
+       } 
+    }
   -----------------------------------------------------------------------
-  Function level 
-   var1();
-  
+  <b>var</b>:<i>Allow function level and block level</i>
+  <b>let</b>:<i>Allow block level only</i>
+  <b>const</b>:<i>values can't change & object values can't change</i>
+  -----------------------------------------------------------------------
+  <b>object level</b>
+   Student :{Name:"Raju"}<i>  here property Name value can change and we cant add more properties</i>
+
+  </span>
 </pre>
     
 
