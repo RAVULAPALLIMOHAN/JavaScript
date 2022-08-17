@@ -14,16 +14,17 @@
 <body>
     <h1 id="title">Java Script</h1>
 
-<button onclick="document.getElementById('demo').innerHTML = Date()">Display date & time</button>
-<span id="demo"></span>
+
+<span id="demo" onclick="hideDemo()"></span>
 <hr/>
 <p id="demo1">JavaScript can change the style of an HTML element.</p>
-
+<button onclick="document.getElementById('demo').innerHTML = Date()">Display date & time</button>
 <button type="button" onclick="document.getElementById('demo1').style.fontSize='30px'">Font Size Incr</button>&nbsp;&nbsp;
 <button type="button"onclick="document.getElementById('demo1').style.fontSize='16px'">Font Size Decr</button>&nbsp;&nbsp;<span id="content" ondblclick="hideContent()" onclick="changecolor()"></span>&nbsp;&nbsp;
 <button type="button" onclick="addContent()">Add Content</button>
 
 <button type="button" onclick="document.write('')">Clean the page</button>
 <button type="button" onclick="window.print('')">Print This Page</button>
+<button type="button" onclick="hide()">Object</button>
 
 </body>
