@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <script>
+
+const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+//const cars = {fname:"John", lname:"Doe", age:25}
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+//-------------------
+let txt ="";
+for (let x in cars) {
+  txt += cars[x] + " ";
+}
+document.getElementById("demo").innerHTML = text;
+//------------------------------------------------
+const numbers = [45, 4, 9, 16, 25];
+let txt1 = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt1;
+function myFunction(value, index, array) {
+  txt1 += value + "<br>"; 
+}
+//--------------------------------------------
+const car = ["BMW", "Volvo", "Saab", "Ford"];
+
+let i = 0;
+let text2 = "";
+for (;cars[i];) {
+  text += cars[i] + "<br>";
+  i++;
+}
+//--------------
+while (cars[i]) {
+  text += cars[i] + "<br>";
+  i++;
+}
+
+
+
+document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
